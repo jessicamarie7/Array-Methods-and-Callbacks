@@ -113,8 +113,14 @@ Use the higher-order function getWinnersByYear to do the following:
 hint: the strings returned need to exactly match the string in step 4.
  */
 
-function getWinnersByYear(array, getYearsCB, getWinndersCB) {
-  
+function getWinnersByYear(array, getYearsCB, getWinnersCB) {
+  const yearsArray = getYearsCB(array, getFinals);
+  const winnersArray = getWinnersCB(array, getFinals);
+  return winnersArray.map(function(winner, index){
+      
+//    pull the year and the country out of the new array
+  })
+
 }
 
 
